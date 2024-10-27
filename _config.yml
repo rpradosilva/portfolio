@@ -1,3 +1,5 @@
-url: "portfolio.github.io"
+title: Portfolio
+email: contato@rprado.design
+description: Livros que todo designer deve comprar
 baseurl: "/portfolio"
-title: "portfolio"
+url: "http://portfolio.github.io"
