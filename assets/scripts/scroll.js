@@ -223,4 +223,13 @@
   return luxy;
 });
 
+jumpTo = (obj) => {
+  scrollTo({
+    top: document.querySelector(obj).offsetTop,
+    left: 0,
+    behavior: "smooth",
+  });
+  window.location = `${obj}`;
+};
+
 luxy.init();

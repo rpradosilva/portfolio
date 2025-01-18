@@ -64,8 +64,10 @@ h6 {
 
 a {
   color: var(--color-brand-primary-100);
+  display: block;
   font-size: var(--font-size-rg);
   line-height: var(--line-heigh-title-xs);
+  padding: var(--size-16);
 }
 
 p {
