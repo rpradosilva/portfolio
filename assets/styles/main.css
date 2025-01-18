@@ -124,7 +124,7 @@ nav > a > svg path {
   color: var(--color-brand-primary-500);
 }
 
-.hero__tagline {
+p.hero__tagline {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xs);
   line-height: var(--line-heigh-title-xs);
