@@ -1,36 +1,95 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  ascent-override: 80%;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-MediumItalic.woff") format("woff"),
+    url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+  ascent-override: 80%;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff"),
+    url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-RegularItalic";
+  src: url("../fonts/Satoshi-RegularItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-RegularItalic.woff") format("woff"),
+    url("../fonts/Satoshi-RegularItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
+:root {
+  --color-brand-primary-100: rgb(173, 255, 255);
+  --color-brand-primary-500: rgb(22, 184, 184);
+  --color-brand-primary-700: rgb(0, 158, 158);
+  --color-brand-secondary-100: rgb(12, 67, 102);
+  --color-brand-secondary-500: rgb(2, 26, 41);
+  --color-brand-secondary-700: rgb(0, 13, 20);
+  --color-neutral-100: rgba(188, 210, 224, 1);
+  --color-neutral-300: rgba(154, 172, 184, 1);
+  --color-neutral-500: rgba(120, 134, 143, 1);
+  --color-neutral-700: rgba(51, 57, 61, 1);
+  --color-feedback-success: rgba(51, 184, 124, 1);
+  --color-feedback-danger: rgba(184, 51, 51, 1);
+  --color-feedback-warning: rgba(184, 135, 22, 1);
+  --font-family-title: "Satoshi-Medium";
+  --font-family-title-italic: "Satoshi-MediumItalic";
+  --font-family-body: "Satoshi-Regular";
+  --font-family-body-italic: "Satoshi-RegularItalic";
+  --size-width-main: 121.6rem;
+  --size-height-hero: 76.8rem;
+  --size-8: 0.8rem;
+  --size-16: 1.6rem;
+  --size-24: 2.4rem;
+  --size-32: 3.2rem;
+  --size-40: 4rem;
+  --size-48: 4.8rem;
+  --size-56: 5.6rem;
+  --size-64: 6.4rem;
+  --size-72: 7.2rem;
+  --size-80: 8rem;
+  --size-88: 8.8rem;
+  --size-96: 9.6rem;
+  --size-104: 10.4rem;
+  --size-112: 11.2rem;
+  --font-size-4xl: 6.4rem;
+  --font-size-3xl: 4rem;
+  --font-size-2xl: 3.2rem;
+  --font-size-xl: 2.8rem;
+  --font-size-lg: 2.4rem;
+  --font-size-md: 2rem;
+  --font-size-rg: 1.8rem;
+  --font-size-sm: 1.6rem;
+  --font-size-xs: 1.4rem;
+  --line-heigh-title-xl: 7.68rem;
+  --line-heigh-title-lg: 4.8rem;
+  --line-heigh-title-md: 3.84rem;
+  --line-heigh-title-rg: 2.88rem;
+  --line-heigh-title-sm: 2.4rem;
+  --line-heigh-title-xs: 2.16rem;
+  --line-heigh-body-xl: 4.8rem;
+  --line-heigh-body-lg: 4.2rem;
+  --line-heigh-body-md: 3.6rem;
+  --line-heigh-body-rg: 3rem;
+  --line-heigh-body-sm: 2.7rem;
+  --line-heigh-body-xs: 2.4rem;
 }
