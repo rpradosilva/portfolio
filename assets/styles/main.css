@@ -115,13 +115,6 @@ nav > a > svg path {
   gap: var(--size-32);
 }
 
-.hero__tagline {
-  font-family: var(--font-family-title);
-  font-size: var(--font-size-xs);
-  line-height: var(--line-heigh-title-xs);
-  letter-spacing: calc(var(--size-8) / 1.5);
-}
-
 .hero p {
   font-size: var(--font-size-md);
   line-height: var(--line-heigh-title-rg);
@@ -129,6 +122,13 @@ nav > a > svg path {
 
 .hero h1 > span {
   color: var(--color-brand-primary-500);
+}
+
+.hero__tagline {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-heigh-title-xs);
+  letter-spacing: calc(var(--size-8) / 1.5);
 }
 
 @keyframes arrowAnimation {
