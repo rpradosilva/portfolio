@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "root.css";
 @import "./utils/hero.css";
+@import "./utils/footer.css";
 
 :root {
   font-size: 62.5%;
@@ -21,7 +22,7 @@ main {
   );
   display: flex;
   flex-direction: column;
-  gap: 11.2rem;
+  gap: var(--size-spacing-sections);
   margin: 0 auto;
   max-width: var(--size-width-main);
   padding: var(--size-48) 0;
