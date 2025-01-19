@@ -1,4 +1,4 @@
-@import "reset.css";
+@import "./utils/reset.css";
 @import "root.css";
 @import "./utils/hero.css";
 @import "./utils/cases.css";
@@ -13,6 +13,8 @@ body {
   background: var(--color-brand-secondary-700);
   color: var(--color-neutral-100);
   font-family: var(--font-family-body);
+  font-size: var(--font-size-rg);
+  line-height: var(--line-heigh-title-sm);
 }
 
 main {
@@ -71,21 +73,17 @@ a {
   font-family: var(--font-family-title);
   font-size: var(--font-size-rg);
   line-height: var(--line-heigh-title-xs);
-  padding: var(--size-16) var(--size-32);
+  padding: var(--size-24);
 }
 
 a:hover {
   opacity: 0.7;
 }
 
-p {
-  font-size: var(--font-size-rg);
-  line-height: var(--line-heigh-title-xs);
-}
-
 .button__primary,
 .button__secondary {
   border-radius: var(--size-32);
+  padding: var(--size-16) var(--size-32);
 }
 
 .button__primary {
