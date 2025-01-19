@@ -23,7 +23,7 @@
 
 .hero__nav-menu {
   display: flex;
-  gap: var(--size-48);
+  gap: var(--size-24);
 }
 
 .hero__content {

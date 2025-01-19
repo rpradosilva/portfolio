@@ -2,7 +2,6 @@ footer {
   align-items: center;
   border-top: 1px solid var(--color-brand-secondary-500);
   display: flex;
-  justify-content: space-between;
   width: 100%;
   padding: var(--size-80) 0 var(--size-40) 0;
 }
@@ -33,5 +32,5 @@ footer {
 
 .footer__nav {
   display: flex;
-  gap: var(--size-48);
+  gap: var(--size-24);
 }

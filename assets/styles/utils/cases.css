@@ -1,0 +1,7 @@
+#cases {
+  align-items: center;
+  display: flex;
+  gap: var(--size-gap-sections);
+  width: 100%;
+  border: 1px solid red;
+}

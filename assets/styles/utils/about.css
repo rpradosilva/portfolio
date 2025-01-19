@@ -1,0 +1,70 @@
+#about {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-gap-sections);
+  width: 100%;
+}
+
+.about__resume {
+  display: flex;
+  gap: var(--size-96);
+  width: 100%;
+}
+
+.about__resume-photo > img {
+  border-radius: 50%;
+  height: auto;
+  max-width: var(--size-image-sections);
+  width: 100%;
+}
+
+.about__resume-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: var(--size-40);
+  max-width: var(--size-width-resume);
+}
+
+.about__resume-content > h2 {
+  color: var(--color-brand-primary-100);
+}
+
+.about__resume-metrics {
+  display: flex;
+  font-size: var(--font-size-rg);
+  gap: var(--size-32);
+  line-height: var(--line-body-sm);
+  justify-content: space-between;
+}
+
+.about__resume-metrics > div {
+  border: 2px solid var(--color-brand-secondary-500);
+  border-radius: var(--size-16);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: var(--size-8);
+  padding: var(--size-24);
+  text-align: center;
+}
+
+.about__resume-metrics h4 {
+  color: var(--color-brand-primary-100);
+}
+
+.about__resume-content p > span {
+  color: var(--color-brand-primary-100);
+}
+
+.about__resume-links {
+  display: flex;
+  gap: var(--size-24);
+  margin-top: var(--size-16);
+}
+
+.about__experiences {
+  width: 100%;
+  border: 1px solid pink;
+}
