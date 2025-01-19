@@ -1,7 +1,13 @@
 #cases {
-  align-items: center;
   display: flex;
-  gap: var(--size-gap-sections);
+  flex-direction: column;
+  gap: var(--size-72);
   width: 100%;
-  border: 1px solid red;
+}
+
+#cases > h2 {
+  color: var(--color-brand-primary-100);
+}
+
+#cases > * {
 }
