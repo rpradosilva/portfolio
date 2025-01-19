@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-height: var(--size-height-hero);
+  max-height: 90vh;
   width: 100%;
 }
 
