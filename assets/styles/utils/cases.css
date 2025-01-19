@@ -28,8 +28,8 @@
 
 .case__card-gradient {
   background-image: radial-gradient(
-    60% 100% at 0% 50%,
-    var(--color-brand-primary-500) 0%,
+    40% 70% at 0% 50%,
+    rgba(0, 158, 158, 1) 0%,
     rgba(0, 158, 158, 0.4) 100%
   );
   backdrop-filter: blur(var(--size-64));

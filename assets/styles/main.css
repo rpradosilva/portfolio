@@ -20,7 +20,7 @@ body {
 main {
   align-items: center;
   background-image: radial-gradient(
-    50% 45% at 50% 0%,
+    50% 15% at 50% 0%,
     var(--color-brand-secondary-500) 0%,
     rgba(0, 0, 0, 0) 100%
   );
