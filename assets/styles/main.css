@@ -23,19 +23,21 @@ body {
   background: var(--brand-secondary-700);
   color: var(--neutral-100);
   font-family: var(--body);
-  font-size: var(--20);
-  line-height: var(--30);
+  font-size: var(--18);
+  line-height: var(--26);
 }
 
-main {
+.wrapper {
   display: grid;
-  gap: var(--240);
-  grid-auto-rows: var(--768) auto auto auto;
-  padding: var(--40);
+  gap: var(--112);
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: var(--24);
 }
 
 header {
   background: blue;
+  height: 80vh;
 }
 
 section {
@@ -43,30 +45,9 @@ section {
 }
 
 footer {
-  align-items: center;
-  display: grid;
-  gap: var(--24);
-  grid-template-columns: auto 3fr auto;
+  background: yellow;
 }
 
 footer svg {
   fill: var(--brand-secondary-500);
-}
-
-footer div {
-  color: var(--brand-primary-100);
-}
-
-footer div span {
-  color: var(--neutral-100);
-  font-size: var(--14);
-  line-height: var(--22);
-}
-
-footer nav {
-  display: flex;
-}
-
-footer nav a {
-  padding: var(--24);
 }
