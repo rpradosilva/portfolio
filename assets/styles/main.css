@@ -1,47 +1,204 @@
+@import "reset.css";
 @import "root.css";
 
 :root {
   font-size: 62.5%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
 a {
   color: var(--brand-primary-100);
 }
 
-a:hover {
+a:active {
   opacity: 0.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--brand-primary-100);
+  font-family: var(--title);
+}
+
+h1 {
+  font-size: calc(var(--64) / 1.3);
+  line-height: calc(var(--72) / 1.3);
+}
+
+h2 {
+  font-size: calc(var(--48) / 1.3);
+  line-height: calc(var(--56) / 1.3);
+}
+
+h3 {
+  font-size: calc(var(--40) / 1.3);
+  line-height: calc(var(--48) / 1.3);
+}
+
+h4 {
+  font-size: calc(var(--32) / 1.3);
+  line-height: calc(var(--40) / 1.3);
+}
+
+h5 {
+  font-size: calc(var(--24) / 1.3);
+  line-height: calc(var(--32) / 1.3);
+}
+
+h6 {
+  font-size: calc(var(--18) / 1.3);
+  line-height: calc(var(--26) / 1.3);
 }
 
 body {
   background: var(--brand-secondary-700);
+  background-image: radial-gradient(
+    50% 45% at 50% 0%,
+    var(--brand-secondary-500) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   color: var(--neutral-100);
   font-family: var(--body);
-  font-size: var(--18);
-  line-height: var(--26);
+  font-size: calc(var(--18) / 1.3);
+  line-height: calc(var(--26) / 1.3);
 }
 
 .wrapper {
   display: grid;
-  gap: var(--112);
+  gap: var(--240);
   margin: 0 auto;
   max-width: 1120px;
   padding: var(--24);
 }
 
 header {
-  background: blue;
+  display: flex;
+  flex-direction: column;
+  gap: var(--56);
   height: 80vh;
 }
 
+header nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header svg {
+  fill: var(--brand-primary-500);
+  height: var(--40);
+  width: var(--40);
+}
+
+header a[title="Menu Icon"] {
+  font-size: var(--32);
+  line-height: var(--32);
+}
+
+header div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+header div > p {
+  font-size: calc(var(--24) / 1.3);
+  line-height: calc(var(--32) / 1.3);
+}
+
+header div > span {
+  color: var(--brand-primary-100);
+  font-size: calc(var(--18) / 1.3);
+  letter-spacing: calc(var(--8) / 2.5);
+  line-height: calc(var(--26) / 1.3);
+}
+
+header div h1 {
+  margin: var(--16) 0 var(--40) 0;
+}
+
+header div h1 > span {
+  color: var(--brand-primary-500);
+}
+
+header div > a {
+  animation: arrowAnimation 1s infinite;
+  margin: var(--24) 0;
+  padding: var(--16);
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translate(0, -4px);
+  }
+  50% {
+    transform: translate(0, 4px);
+  }
+  100% {
+    transform: translate(0, -4px);
+  }
+}
+
 section {
-  background: red;
+  display: flex;
+  flex-direction: column;
+  gap: var(--56);
+}
+
+#cases > article {
+  align-items: center;
+  background: rgba(2, 26, 41, 0.5);
+  border: 1px solid rgba(173, 255, 255, 0.04);
+  border-radius: var(--24);
+  box-shadow: 0px 1px 0px 0px rgba(22, 184, 184, 0.16) inset;
+  display: flex;
+  flex-direction: column;
+  gap: var(--32);
+  padding: var(--32) var(--24) var(--40) var(--24);
+}
+
+#cases article > img {
+  width: 100%;
+  height: 100%;
+  max-width: var(--560);
+}
+
+#cases article > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--32);
+}
+
+#cases article > div > span {
+  color: var(--neutral-300);
+  font-size: calc(var(--22) / 1.3);
+  line-height: calc(var(--30) / 1.3);
+}
+
+#cases article > div > a[title="Button Case"] {
+  border: 1px solid var(--brand-primary-500);
+  border-radius: var(--48);
+  color: var(--brand-primary-500);
+  display: block;
+  font-size: calc(var(--24) / 1.3);
+  line-height: calc(var(--32) / 1.3);
+  padding: var(--14);
+  text-align: center;
+}
+
+#cases article > div > div {
+  display: none;
+}
+
+#cases article > div > div p > span {
+  color: var(--brand-primary-500);
 }
 
 footer {
@@ -50,4 +207,114 @@ footer {
 
 footer svg {
   fill: var(--brand-secondary-500);
+  height: var(--40);
+  width: var(--40);
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: var(--64);
+    line-height: var(--72);
+  }
+
+  h2 {
+    font-size: var(--48);
+    line-height: var(--56);
+  }
+
+  h3 {
+    font-size: var(--40);
+    line-height: var(--48);
+  }
+
+  h4 {
+    font-size: var(--32);
+    line-height: var(--40);
+  }
+
+  h5 {
+    font-size: var(--24);
+    line-height: var(--32);
+  }
+
+  h6 {
+    font-size: var(--18);
+    line-height: var(--32);
+  }
+
+  body {
+    font-size: var(--18);
+    line-height: var(--26);
+  }
+
+  .wrapper {
+    padding: var(--80) 0;
+  }
+
+  header {
+    height: 85vh;
+  }
+
+  header svg {
+    height: var(--48);
+    width: var(--48);
+  }
+
+  header div > span {
+    font-size: var(--22);
+    line-height: var(--30);
+  }
+
+  header div > p {
+    font-size: var(--24);
+    line-height: var(--32);
+  }
+
+  header div h1 > span {
+    display: block;
+  }
+
+  header div h1 {
+    margin: var(--16) 0 var(--40) 0;
+  }
+
+  header div > a {
+    margin: var(--40) 0;
+  }
+
+  #cases {
+    gap: var(--112);
+  }
+
+  #cases > article {
+    flex-direction: row;
+    padding: 0 var(--64) 0 0;
+  }
+
+  #cases article > div {
+    align-items: flex-start;
+  }
+
+  #cases article > div > span {
+    font-size: var(--18);
+    line-height: var(--26);
+  }
+
+  #cases article > div > a[title="Button Case"] {
+    font-size: var(--18);
+    line-height: var(--26);
+    padding: var(--14) var(--40);
+  }
+
+  #cases article > div > div {
+    display: none;
+  }
+
+  #cases article > div > div p > span {
+    color: var(--brand-primary-500);
+  }
+
+  #cases article > div > div {
+    display: block;
+  }
 }
