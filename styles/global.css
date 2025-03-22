@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-RegularItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+:root {
+  --brand-primary-100: #adffff;
+  --brand-primary-500: #16b8b8;
+  --brand-primary-700: #009e9e;
+  --brand-secondary-100: #0c4366;
+  --brand-secondary-500: #021a29;
+  --brand-secondary-700: #000d14;
+  --feedback-danger: #b83333;
+  --feedback-success: #33b87c;
+  --feedback-warning: #b88716;
+  --neutral-100: #bcd2e0;
+  --neutral-300: #9aacb8;
+  --neutral-500: #78868f;
+  --neutral-700: #33393d;
+
+  --max-width: 48rem;
+  --px-base: 1rem;
+  --py-base: 1rem;
+
+  --gap-section: 7rem;
+
+  --ff: "Satoshi", system-ui, sans-serif;
+  --fw-base: normal;
+  --fst-italic: italic;
+  --fw-bold: bold;
+
+  --fs-3xl: 2.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-xl: 1.85rem;
+  --fs-lg: 1.65rem;
+  --fs-md: 1.4rem;
+  --fs-base: 1.25rem;
+  --fs-sm: 1.125rem;
+  --fs-xs: 0.875rem;
+
+  --lh-base: 1.5;
+  --lh-title: 1.2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--brand-primary-100);
+  text-decoration: none;
+}
+
+html {
+  font: var(--fw-base) var(--fs-base) / var(--lh-base) var(--ff);
+}
+
+body {
+  background: var(--brand-secondary-700);
+  color: var(--neutral-100);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--brand-primary-100);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-title);
+}
+
+h1 {
+  font-size: var(--fs-3xl);
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-section);
+  margin-block: var(--py-base);
+}
+
+.container {
+  margin-inline: auto;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+}
+
+@media (width >= 80em) {
+  :root {
+    --fs-3xl: 4rem;
+    --fs-2xl: 3rem;
+    --fs-xl: 2.5rem;
+    --fs-lg: 2rem;
+    --fs-md: 1.75rem;
+    --fs-base: 1.5rem;
+    --fs-sm: 1.25rem;
+    --fs-xs: 1.125rem;
+
+    --max-width: 76rem;
+    --px-base: 7rem;
+    --py-base: 3rem;
+
+    --gap-section: 15rem;
+  }
+}
