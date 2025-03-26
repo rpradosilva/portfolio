@@ -3,12 +3,12 @@
   width: min(var(--max-width), 100% - var(--px-base) * 2);
 }
 
-.desktop-only {
-  display: none;
-}
-
 .mobile-only {
   display: flex;
+}
+
+.desktop-only {
+  display: none !important;
 }
 
 .wrapper {
@@ -17,7 +17,7 @@
 
 @media (width >= 80em) {
   .desktop-only {
-    display: flex;
+    display: flex !important;
   }
 
   .mobile-only {

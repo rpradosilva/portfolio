@@ -1,9 +1,0 @@
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu-items {
-  gap: 2rem;
-}

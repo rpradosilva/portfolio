@@ -77,7 +77,12 @@ html {
 }
 
 body {
-  background: var(--brand-secondary-700);
+  background: radial-gradient(
+      circle at center top,
+      var(--brand-secondary-100) -20%,
+      var(--brand-secondary-700) 40%
+    )
+    var(--brand-secondary-700) no-repeat top;
   color: var(--neutral-100);
 }
 
