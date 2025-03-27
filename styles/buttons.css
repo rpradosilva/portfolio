@@ -7,8 +7,8 @@
   font: var(--fw-base) var(--fs-xs) / var(--lh-lg) var(--ff);
   justify-content: center;
   width: fit-content;
-  transition: opacity 250ms;
   -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 
   &:focus {
     opacity: 0.6;
