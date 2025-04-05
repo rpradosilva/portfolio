@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: calc(100dvh - 2 * var(--py-base)); /* dvh to mobile devices */
   height: calc(100vh - 2 * var(--py-base));
   justify-content: space-between;
   text-align: center;

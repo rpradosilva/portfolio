@@ -8,6 +8,7 @@
   justify-content: center;
   width: fit-content;
   -webkit-transition: opacity 250ms;
+  text-align: center;
   transition: opacity 250ms;
 
   &:focus {
@@ -22,7 +23,7 @@
 .btn-primary,
 .btn-secondary {
   border-radius: 5rem;
-  padding: 0.8125rem 2rem;
+  padding: 0.8125rem 1.5rem;
 }
 
 .btn-primary {
