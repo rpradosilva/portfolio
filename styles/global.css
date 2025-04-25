@@ -74,6 +74,7 @@ a {
 
 html {
   font: var(--fw-base) var(--fs-base) / var(--lh-base) var(--ff);
+  scroll-behavior: smooth;
 }
 
 body {

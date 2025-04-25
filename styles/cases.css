@@ -53,6 +53,8 @@
 
 @media (width >= 64em) {
   #cases {
+    gap: 4rem;
+
     & article {
       background: radial-gradient(
           circle at left,
