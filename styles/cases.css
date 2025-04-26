@@ -19,7 +19,7 @@
     padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 
     & dotlottie-player {
-      width: 20rem;
+      width: 100%;
     }
 
     & > div {
@@ -64,6 +64,10 @@
       grid-auto-flow: column;
       grid-auto-columns: 1fr 2fr;
       padding: 4rem;
+
+      & dotlottie-player {
+        width: 20rem;
+      }
 
       & > div {
         & h3 {
