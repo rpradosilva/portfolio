@@ -1,5 +1,5 @@
 const userAgent = navigator.userAgent;
-let casePreviewAnimations = document.querySelectorAll("#cases article");
+let portfolioItems = document.querySelectorAll("#cases article");
 let lottiePlayer, lottiePlayers;
 
 if (!/mobile/i.test(userAgent)) {
@@ -9,15 +9,15 @@ if (!/mobile/i.test(userAgent)) {
     player.removeAttribute("autoplay", "");
   }
 
-  for (const animation of casePreviewAnimations) {
-    animation.addEventListener("mouseover", function () {
-      lottiePlayer = animation.querySelector("dotlottie-player");
+  for (const item of portfolioItems) {
+    item.addEventListener("mouseover", function () {
+      lottiePlayer = item.querySelector("dotlottie-player");
       lottiePlayer.removeAttribute("autoplay", "");
       lottiePlayer.play();
     });
 
-    animation.addEventListener("mouseleave", function () {
-      lottiePlayer = animation.querySelector("dotlottie-player");
+    item.addEventListener("mouseleave", function () {
+      lottiePlayer = item.querySelector("dotlottie-player");
       lottiePlayer.pause();
     });
   }
