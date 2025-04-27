@@ -15,6 +15,10 @@
   margin-block: var(--py-base);
 }
 
+span.highlight {
+  color: var(--brand-primary-100);
+}
+
 @media (width >= 80em) {
   .desktop-only {
     display: flex !important;
