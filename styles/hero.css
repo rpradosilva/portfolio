@@ -1,33 +1,27 @@
 #hero {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: calc(100dvh - 2 * var(--py-base)); /* dvh to mobile devices */
-  height: calc(100vh - 2 * var(--py-base));
-  justify-content: space-between;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: auto 1fr auto;
   text-align: center;
 
   & nav {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr repeat(2, auto);
+
+    & > a {
+      font-size: calc(var(--fs-sm) / 1.1);
+    }
 
     & svg {
       width: 2rem;
     }
-
-    & div {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
-    }
   }
 
-  & div {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+  & > div:nth-of-type(1) {
+    align-self: center;
+    display: grid;
+    gap: 1.5rem;
 
     & > span {
       font-size: var(--fs-xs);
@@ -41,6 +35,19 @@
 
     & p {
       font-size: var(--fs-sm);
+    }
+  }
+
+  & > div:nth-of-type(2) {
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    position: relative;
+
+    & > a {
+      position: absolute;
+      bottom: 0;
+      animation: bounce 1.2s ease-in-out infinite;
     }
   }
 }
@@ -57,20 +64,15 @@
   }
 }
 
-.arrow {
-  margin-top: 3.5rem;
-  position: relative;
-
-  & div {
-    position: absolute;
-    bottom: 0;
-    animation: bounce 1.2s ease-in-out infinite;
-  }
-}
-
-@media (width >= 80em) {
+@media (width >= 76em) {
   #hero {
     & nav {
+      gap: 2rem;
+
+      & > a {
+        font-size: var(--fs-sm);
+      }
+
       & svg {
         width: 3rem;
       }

@@ -34,21 +34,25 @@
   --neutral-500: #78868f;
   --neutral-700: #33393d;
 
-  --wrapper-margin: 1.5rem;
+  --max-width: 48rem;
+  --px-base: 1rem;
+  --py-base: 1rem;
+
+  --gap-section: 7rem;
 
   --ff: "Satoshi", system-ui, sans-serif;
   --fw-base: normal;
   --fst-italic: italic;
   --fw-bold: bold;
 
-  --fs-3xl: 2.35rem;
-  --fs-2xl: 2.15rem;
-  --fs-xl: 1.75rem;
-  --fs-lg: 1.55rem;
-  --fs-md: 1.3rem;
-  --fs-base: 1.15rem;
-  --fs-sm: 1.025rem;
-  --fs-xs: 0.775rem;
+  --fs-3xl: 2.5rem;
+  --fs-2xl: 2.25rem;
+  --fs-xl: 1.85rem;
+  --fs-lg: 1.65rem;
+  --fs-md: 1.4rem;
+  --fs-base: 1.25rem;
+  --fs-sm: 1.125rem;
+  --fs-xs: 0.875rem;
 
   --lh-base: 1.5;
   --lh-lg: 1.2;
@@ -85,17 +89,9 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-rows: calc(100dvh - 2 * var(--wrapper-margin)) repeat(3, auto);
-  gap: 15rem;
-  margin: var(--wrapper-margin) auto;
-  width: min(76rem, 100% - 2 * var(--wrapper-margin));
-
-  & img {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 20rem;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-section);
 }
 
 h1,
@@ -118,17 +114,21 @@ h3 {
   font-size: var(--fs-xl);
 }
 
-@media (width >= 76em) {
+@media (width >= 80em) {
   :root {
-    --wrapper-margin: 4rem;
+    --fs-3xl: 3.5rem;
+    --fs-2xl: 2.5rem;
+    --fs-xl: 2rem;
+    --fs-lg: 1.75rem;
+    --fs-md: 1.5rem;
+    --fs-base: 1.25rem;
+    --fs-sm: 1.125rem;
+    --fs-xs: 0.875rem;
 
-    --fs-3xl: 3.4rem;
-    --fs-2xl: 2.4rem;
-    --fs-xl: 1.9rem;
-    --fs-lg: 1.65rem;
-    --fs-md: 1.4rem;
-    --fs-base: 1.15rem;
-    --fs-sm: 1.025rem;
-    --fs-xs: 0.775rem;
+    --max-width: 76rem;
+    --px-base: 7rem;
+    --py-base: 3rem;
+
+    --gap-section: 15rem;
   }
 }
