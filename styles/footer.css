@@ -1,5 +1,5 @@
 footer {
-  border-top: 0.15rem solid var(--brand-secondary-500);
+  border-top: 0.06rem solid var(--brand-secondary-500);
   display: grid;
   gap: 2rem;
   padding-block: 3rem;
