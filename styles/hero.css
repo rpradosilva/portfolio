@@ -6,15 +6,11 @@
 
   & nav {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr repeat(2, auto);
-
-    & > a {
-      font-size: calc(var(--fs-sm) / 1.1);
-    }
+    gap: 3rem;
+    grid-template-columns: 1fr auto;
 
     & svg {
-      width: 2rem;
+      width: 2.1rem;
     }
   }
 
@@ -67,11 +63,7 @@
 @media (width >= 76em) {
   #hero {
     & nav {
-      gap: 2rem;
-
-      & > a {
-        font-size: var(--fs-sm);
-      }
+      grid-template-columns: 1fr repeat(2, auto);
 
       & svg {
         width: 3rem;

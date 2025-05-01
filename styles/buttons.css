@@ -4,16 +4,12 @@
   border: 0;
   cursor: pointer;
   display: flex;
-  font: var(--fw-base) var(--fs-xs) / var(--lh-lg) var(--ff);
+  font: var(--fw-base) var(--fs-sm) / var(--lh-xl) var(--ff);
   justify-content: center;
   width: fit-content;
   -webkit-transition: opacity 250ms;
   text-align: center;
   transition: opacity 250ms;
-
-  &:focus {
-    opacity: 0.6;
-  }
 
   & svg path {
     fill: var(--brand-primary-500);

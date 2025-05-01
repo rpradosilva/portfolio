@@ -3,7 +3,6 @@
   gap: 2.5rem;
 
   & article {
-    align-items: center;
     background: radial-gradient(
         circle at top,
         hsla(203, 79%, 22%, 0.4) -20%,
@@ -14,16 +13,13 @@
     border-radius: 1.5rem;
     box-shadow: 0px 1px 0px 0px rgba(22, 184, 184, 0.16) inset;
     display: grid;
-    gap: 2rem;
-    justify-items: center;
-    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
-
-    & dotlottie-player {
-      width: 100%;
-    }
+    gap: 2.5rem;
+    padding: 2.5rem 1.5rem;
 
     & > div {
-      width: 100%;
+      align-self: center;
+      display: grid;
+      gap: 2rem;
 
       & .btn {
         width: 100%;
@@ -33,18 +29,8 @@
         font-size: var(--fs-xs);
       }
 
-      & h3 {
-        padding-block: 2.5rem;
-      }
-
-      & > div {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2rem;
-
-        & span {
-          color: var(--brand-primary-500);
-        }
+      & > div span {
+        color: var(--brand-primary-500);
       }
     }
   }
@@ -61,18 +47,12 @@
           hsla(203, 90%, 8.4%, 0.4) 50%
         )
         var(--brand-secondary-700) no-repeat top;
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr 2fr;
-      padding: 4rem;
-
-      & dotlottie-player {
-        width: 20rem;
-      }
+      gap: 3rem;
+      grid-template-columns: 20rem auto;
+      padding: 3rem;
 
       & > div {
-        & h3 {
-          padding-block: 1.5rem;
-        }
+        gap: 1.5rem;
 
         & .btn {
           width: fit-content;

@@ -35,6 +35,7 @@
   --neutral-700: #33393d;
 
   --wrapper-margin: 1.5rem;
+  --max-img: 23rem;
 
   --ff: "Satoshi", system-ui, sans-serif;
   --fw-base: normal;
@@ -48,7 +49,7 @@
   --fs-md: 1.3rem;
   --fs-base: 1.15rem;
   --fs-sm: 1.025rem;
-  --fs-xs: 0.775rem;
+  --fs-xs: 0.875rem;
 
   --lh-base: 1.5;
   --lh-lg: 1.2;
@@ -87,14 +88,13 @@ body {
 main {
   display: grid;
   grid-template-rows: calc(100dvh - 2 * var(--wrapper-margin)) repeat(3, auto);
-  gap: 15rem;
+  gap: 10rem;
   margin: var(--wrapper-margin) auto;
   width: min(76rem, 100% - 2 * var(--wrapper-margin));
 
   & img {
     border-radius: 50%;
     width: 100%;
-    max-width: 20rem;
   }
 }
 
@@ -129,6 +129,16 @@ h3 {
     --fs-md: 1.4rem;
     --fs-base: 1.15rem;
     --fs-sm: 1.025rem;
-    --fs-xs: 0.775rem;
+    --fs-xs: 0.875rem;
+  }
+
+  main {
+    gap: 16rem;
+  }
+}
+
+@media (width >= 64em) {
+  :root {
+    --wrapper-margin: 3rem;
   }
 }

@@ -18,7 +18,7 @@ if (!/mobile/i.test(userAgent)) {
 
     item.addEventListener("mouseleave", function () {
       lottiePlayer = item.querySelector("dotlottie-player");
-      lottiePlayer.pause();
+      lottiePlayer.stop();
     });
   }
 }
