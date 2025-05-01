@@ -12,8 +12,14 @@ footer {
     }
   }
 
-  & p {
-    font-size: var(--fs-xs);
+  & > div {
+    & > div {
+      font-size: var(--fs-base);
+
+      & > p {
+        font-size: var(--fs-xs);
+      }
+    }
   }
 
   & > div,
