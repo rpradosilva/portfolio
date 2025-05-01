@@ -10,10 +10,6 @@
   -webkit-transition: opacity 250ms;
   text-align: center;
   transition: opacity 250ms;
-
-  & svg path {
-    fill: var(--brand-primary-500);
-  }
 }
 
 .btn-primary,

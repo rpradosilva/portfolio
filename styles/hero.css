@@ -11,6 +11,10 @@
 
     & svg {
       width: 2.1rem;
+
+      & path {
+        fill: var(--brand-primary-500);
+      }
     }
   }
 

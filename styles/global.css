@@ -35,7 +35,7 @@
   --neutral-700: #33393d;
 
   --wrapper-margin: 1.5rem;
-  --max-img: 23rem;
+  --max-img: 20rem;
 
   --ff: "Satoshi", system-ui, sans-serif;
   --fw-base: normal;
@@ -75,20 +75,27 @@ html {
 }
 
 body {
-  background: radial-gradient(
-      circle at top,
-      hsla(203, 79%, 22%, 0.4) -20%,
-      hsla(201, 100%, 4%, 1) 30%
-    )
-    var(--brand-secondary-700) no-repeat top;
-
+  background: var(--brand-secondary-700);
   color: var(--neutral-100);
+}
+
+.radial-gradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100dvh;
+  background: radial-gradient(
+    circle at top,
+    hsla(203, 84%, 25%, 0.3) -30%,
+    hsla(201, 100%, 4%, 1) 70%
+  );
+  z-index: -1;
 }
 
 main {
   display: grid;
   grid-template-rows: calc(100dvh - 2 * var(--wrapper-margin)) repeat(3, auto);
-  gap: 10rem;
+  gap: 8rem;
   margin: var(--wrapper-margin) auto;
   width: min(76rem, 100% - 2 * var(--wrapper-margin));
 
@@ -133,7 +140,7 @@ h3 {
   }
 
   main {
-    gap: 16rem;
+    gap: 12rem;
   }
 }
 
