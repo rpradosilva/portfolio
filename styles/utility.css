@@ -6,6 +6,10 @@
   display: none !important;
 }
 
+#appear {
+  display: grid !important;
+}
+
 .highlight {
   color: var(--brand-primary-100);
 }

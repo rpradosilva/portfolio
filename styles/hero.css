@@ -6,8 +6,20 @@
 
   & nav {
     display: grid;
-    gap: 3rem;
-    grid-template-columns: 1fr auto;
+    gap: 0.5rem;
+
+    & div {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding-bottom: 1rem;
+    }
+
+    & > a {
+      background: var(--brand-secondary-500);
+      border-radius: 0.125rem;
+      width: 100%;
+      padding-block: 1rem;
+    }
 
     & svg {
       width: 2.1rem;
@@ -68,7 +80,19 @@
 @media (width >= 76em) {
   #hero {
     & nav {
+      gap: 3rem;
       grid-template-columns: 1fr repeat(2, auto);
+
+      & div {
+        padding-bottom: none;
+      }
+
+      & > a {
+        background: inherit;
+        border-radius: inherit;
+        width: inherit;
+        padding-block: inherit;
+      }
 
       & svg {
         width: 3rem;

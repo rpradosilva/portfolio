@@ -22,3 +22,15 @@ if (!/mobile/i.test(userAgent)) {
     });
   }
 }
+
+function toggleMenu() {
+  let menuList = document.querySelectorAll("nav .desktop-only");
+
+  for (const menuItem of menuList) {
+    if (menuItem.id == "") {
+      menuItem.setAttribute("id", "appear");
+    } else {
+      menuItem.removeAttribute("id");
+    }
+  }
+}
