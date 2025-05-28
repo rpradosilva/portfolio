@@ -113,7 +113,7 @@
   }
 }
 
-@media (width >= 64em) {
+@media (width >= 65em) {
   #about {
     & article:nth-of-type(1) {
       & h2 {

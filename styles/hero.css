@@ -24,9 +24,10 @@
     gap: 1.5rem;
 
     & > span {
+      color: var(--brand-primary-100);
       font-size: var(--fs-xs);
       letter-spacing: 0.2rem;
-      color: var(--brand-primary-100);
+      justify-self: center;
     }
 
     & h1 span {
@@ -45,9 +46,9 @@
     position: relative;
 
     & > a {
-      position: absolute;
-      bottom: 0;
       animation: bounce 1.2s ease-in-out infinite;
+      bottom: 0;
+      position: absolute;
     }
   }
 }

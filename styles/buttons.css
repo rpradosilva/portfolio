@@ -7,9 +7,9 @@
   font: var(--fw-base) var(--fs-sm) / var(--lh-xl) var(--ff);
   justify-content: center;
   width: fit-content;
-  -webkit-transition: opacity 250ms;
   text-align: center;
   transition: opacity 250ms;
+  -webkit-transition: opacity 250ms;
 }
 
 .btn-primary,
