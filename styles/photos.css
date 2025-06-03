@@ -2,6 +2,10 @@
   display: none;
   gap: 2rem;
 
+  h3 {
+    display: none;
+  }
+
   & img {
     aspect-ratio: 4/3;
     border-radius: 0.5rem;
