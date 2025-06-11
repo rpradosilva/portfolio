@@ -43,3 +43,13 @@ nav.addEventListener("click", (event) => {
     menuIcon.click();
   }
 });
+
+let year = new Date().getFullYear();
+let siteYear = document.querySelector("footer p span");
+siteYear.innerHTML = year;
+
+let yearOfExperience = year - 2013;
+let myExperience = document.querySelectorAll(
+  "#about article div > p.highlight"
+)[0];
+myExperience.innerHTML = yearOfExperience;
