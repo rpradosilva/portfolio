@@ -1,13 +1,13 @@
-const userAgent = navigator.userAgent;
+const nav = document.querySelector("nav");
 let portfolioItems = document.querySelectorAll("#cases article");
 let menuIcon = document.querySelector('[aria-label="Menu"]');
 let lottiePlayer, lottiePlayers;
 
-if (!/mobile/i.test(userAgent)) {
+if (window.matchMedia("(hover: hover)").matches) {
   lottiePlayers = document.querySelectorAll("dotlottie-player");
 
   for (const player of lottiePlayers) {
-    player.removeAttribute("autoplay", "");
+    player.removeAttribute("autoplay");
   }
 
   for (const item of portfolioItems) {
@@ -34,13 +34,12 @@ menuIcon.addEventListener("click", () => {
   }
 
   for (const menuItem of menuList) {
-    if (menuItem.id == "") {
-      menuItem.setAttribute("id", "appear");
-      menuItem.addEventListener("click", () => {
-        menuIcon.click();
-      });
-    } else {
-      menuItem.removeAttribute("id");
-    }
+    menuItem.classList.toggle("menu-item--visible");
+  }
+});
+
+nav.addEventListener("click", (event) => {
+  if (event.target.matches("a.desktop-only.menu-item--visible")) {
+    menuIcon.click();
   }
 });

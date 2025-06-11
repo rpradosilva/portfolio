@@ -6,7 +6,7 @@
   display: none !important;
 }
 
-#appear {
+.menu-item--visible {
   display: grid !important;
 }
 
