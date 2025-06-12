@@ -13,6 +13,7 @@
     & img {
       justify-self: center;
       max-width: var(--max-img);
+      border-radius: 50%;
     }
 
     & > div {

@@ -100,7 +100,7 @@ main {
   width: min(76rem, 100% - 2 * var(--wrapper-margin));
 
   & img {
-    border-radius: 50%;
+    border-radius: 1rem;
     width: 100%;
   }
 }
