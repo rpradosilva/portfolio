@@ -1,28 +1,5 @@
 const nav = document.querySelector("nav");
-let portfolioItems = document.querySelectorAll("#cases article");
 let menuIcon = document.querySelector('[aria-label="Menu"]');
-let lottiePlayer, lottiePlayers;
-
-if (window.matchMedia("(hover: hover)").matches) {
-  lottiePlayers = document.querySelectorAll("dotlottie-player");
-
-  for (const player of lottiePlayers) {
-    player.removeAttribute("autoplay");
-  }
-
-  for (const item of portfolioItems) {
-    item.addEventListener("mouseover", function () {
-      lottiePlayer = item.querySelector("dotlottie-player");
-      lottiePlayer.removeAttribute("autoplay", "");
-      lottiePlayer.play();
-    });
-
-    item.addEventListener("mouseleave", function () {
-      lottiePlayer = item.querySelector("dotlottie-player");
-      lottiePlayer.stop();
-    });
-  }
-}
 
 menuIcon.addEventListener("click", () => {
   let menuList = document.querySelectorAll("nav a.desktop-only");

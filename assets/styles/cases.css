@@ -16,6 +16,10 @@
     gap: 2.5rem;
     padding: 2.5rem 1.5rem;
 
+    & img {
+      border-radius: 2rem;
+    }
+
     & > div {
       align-self: center;
       display: grid;

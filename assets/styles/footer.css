@@ -8,7 +8,7 @@ footer {
     width: 2.1rem;
 
     & path {
-      fill: var(--brand-secondary-100);
+      fill: var(--brand-secondary-500);
     }
   }
 
