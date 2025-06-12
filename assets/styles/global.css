@@ -97,7 +97,7 @@ main {
   grid-template-rows: calc(100dvh - 2 * var(--wrapper-margin)) repeat(3, auto);
   gap: 8rem;
   margin: var(--wrapper-margin) auto;
-  width: min(76rem, 100% - 2 * var(--wrapper-margin));
+  width: min(64rem, 100% - 2 * var(--wrapper-margin));
 
   & img {
     border-radius: 1rem;
