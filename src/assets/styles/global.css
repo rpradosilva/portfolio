@@ -94,7 +94,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: calc(100dvh - 2 * var(--wrapper-margin)) repeat(3, auto);
+  grid-template-rows: calc(100dvh - 2 * var(--wrapper-margin)) /*repeat(2, auto)*/;
   gap: 8rem;
   margin: var(--wrapper-margin) auto;
   width: min(64rem, 100% - 2 * var(--wrapper-margin));
@@ -125,6 +125,56 @@ h3 {
   font-size: var(--fs-xl);
 }
 
+.btn {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  font: var(--fw-base) var(--fs-sm) / var(--lh-xl) var(--ff);
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  transition: opacity 250ms;
+  -webkit-transition: opacity 250ms;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 5rem;
+  padding: 0.8125rem 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary-500);
+  color: var(--brand-secondary-700);
+}
+
+.btn-secondary {
+  border: 0.05rem solid var(--brand-primary-500);
+  color: var(--brand-primary-500);
+}
+
+.btn-icon {
+  font: var(--fw-base) var(--fs-xl) / var(--lh-lg) var(--ff);
+}
+
+.mobile-only {
+  display: grid;
+}
+
+.desktop-only {
+  display: none !important;
+}
+
+.menu-item--visible {
+  display: grid !important;
+}
+
+.highlight {
+  color: var(--brand-primary-100);
+}
+
 @media (width >= 76em) {
   :root {
     --wrapper-margin: 4rem;
@@ -141,6 +191,20 @@ h3 {
 
   main {
     gap: 12rem;
+  }
+
+  .btn {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .desktop-only {
+    display: grid !important;
+  }
+
+  .mobile-only {
+    display: none;
   }
 }
 

@@ -1,0 +1,27 @@
+footer {
+  border-top: 0.01em dashed var(--brand-secondary-100);
+  display: grid;
+  gap: 2rem;
+  padding-block: 3rem;
+
+  & div {
+    font-size: var(--fs-base);
+
+    & p {
+      font-size: var(--fs-xs);
+    }
+  }
+
+  & nav {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto 1fr;
+    justify-self: flex-start;
+  }
+}
+
+@media (width >= 48em) {
+  footer {
+    grid-template-columns: 1fr auto;
+  }
+}
